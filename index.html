@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mini BTC Ticker</title>
+  </head>
+  <body>
+    Henlo
+  </body>
+  <script>
+    require('electron').ipcRenderer.on('price', (event, message) => {
+      console.log(message);
+      document.body.innerHTML = "BTC-USD: " + message;
+    });
+  </script>
+</html>

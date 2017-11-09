@@ -1,0 +1,12 @@
+{
+  "name": "minibtcticker",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
+  "dependencies": {
+    "electron": "^1.7.9",
+    "ws": "^3.3.1"
+  }
+}
